@@ -10,7 +10,7 @@ $ancho: 50%;
   .flex {
     display: flex;
     background-image: $fondo;
-    width: $ancho+25;
+    width: 75%;
     flex-direction: column;
     align-items: center; }
   .flex__box {
@@ -44,14 +44,14 @@ $ancho: 50%;
 .footer__box {
     display: flex;
     justify-content: space-evenly;
-    width: $ancho-20;}
+    width: 30%;}
 .footer__box__component {
     padding: 15%;
     display: flex;
     flex-flow: column wrap;}
 .footer__redes {
     display: flex;
-    width: $ancho+30;
+    width: 80%;
     justify-content: flex-end;
     padding-bottom: 2%;}    
 .footer__sub-2 {
@@ -86,13 +86,33 @@ $ancho: 50%;
   margin-right: auto;
   width: 50%; }
 
+.pagename {
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: yellow 0 0 5px, red 0 0 5px;
+  text-transform: uppercase; 
+  background-image:url(../imagenes/back1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 200px;
+  margin: 0;
+
+
+}
+
+
 .titulos {
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 10px;
   text-align: center;
   text-shadow: black 6px 6px 8px;
-  text-transform: uppercase; }
+  text-transform: uppercase;}
 
 .titulos2 {
   background-repeat: no-repeat;
@@ -133,7 +153,23 @@ h2 {
   text-align: center;
   text-decoration: underline; }
 
-.parrafos2 {
+
+.questions{
+  background-image: $fondo;
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;}
+
+.questions_box{
+background-color: lightpink;
+border-radius: 10px;
+margin: 10px 0px 10px 10px;
+width: 50%;}
+
+.questions_box_title{
+  color: #125688;}
+  
+.questions_box_content {
   color: #333;
   font-family: 'Verdana', sans-serif;
   font-size: 16px;
@@ -141,6 +177,10 @@ h2 {
   line-height: 150%;
   text-indent: 30px;
   margin: 0; }
+
+.form {
+  margin-left: 40px;
+}
 
 /* --------------------- No lo uso
 ul {
@@ -247,13 +287,14 @@ display:block;
 .warning {
   width: 100%;
   height: 50%;
+  display: block;
   background-color: #ffffff;
   color: #000000;
   border: solid #000000;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 45px;
+  line-height: 60px;
   margin: 0; }
 
 /* Selector de ID */
