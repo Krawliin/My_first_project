@@ -16,7 +16,7 @@
 
     <header class="backg">
             <div>
-                <h1  class="titulos"> Preguntas Frecuentes</h1>
+                <h1 class="pagesubname"> Preguntas Frecuentes</h1>
                 <p class="parrafos"> Bienvenido a nuestras preguntas frecuentes, acá encontrás un espacio que podrá resolver cualquier duda antes de realizar un pedido. </p>                
             </div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -40,7 +40,7 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="tutoriales.html">Tutoriales</a>
+                        <a class="nav-link" href="tutoriales.html">Información</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
@@ -58,8 +58,76 @@
               </nav>
         </header>
 
+<!--- Acordeón de preguntas --->
+<section class="questions">
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        ¿Cómo realizar pedidos?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Una vez hayas identificado el producto a comprar, sólo basta con agregarlo al carrito y realizar la compra siguiendo los pasos.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        ¿Los productos cuentan con garantía?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Si la compra es realizada directamente desde nuestra página web, todos los hardware contarán con una garantía de 30 días desde el momento en que se recibe el artículo.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        ¿Qué métodos de pago aceptan?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Nuestros método de pago principales son Visa, Mastercard y American Express. Sin embargo, también aceptamos paypal, Uphold, Coinbase y Crytomonedas.</div>
+    </div>
+  </div>
+</div>
+<!--- Formulario --->
+<div class="wrapper">
+  <div class="title">
+    ¡Déjanos tu consulta!
+  </div>
+  <div class="form">
+     <div class="inputfield">
+        <label>Nombre(s)</label>
+        <input type="text" class="input">
+     </div>  
+      <div class="inputfield">
+        <label>Apellido(s)</label>
+        <input type="text" class="input">
+     </div>          
+      <div class="inputfield">
+        <label>Email</label>
+        <input type="text" class="input">
+     </div> 
+    <div class="inputfield">
+        <label>Número Telefónico</label>
+        <input type="text" class="input">
+     </div> 
+    <div class="inputfield">
+        <label>Consulta</label>
+        <textarea class="textarea"></textarea>
+     </div>        
+    <div class="inputfield">
+      <input type="submit" value="Register" class="btn">
+    </div>
+  </div>
+</div>	
+</section>
 
+<!--- Preguntas --->
     <section class="questions">
+      <div>
           <div class="questions_box">
               <h3 class="questions_box_title">¿Cómo realizar pedidos?</h3>
               <p class="questions_box_content">Una vez hayas identificado el producto a comprar, sólo basta con agregarlo al carrito y realizar la compra siguiendo los pasos.</p>
@@ -84,46 +152,74 @@
               <h3 class="questions_box_title">Si soy de otro país, ¿puedo comprar?</h3>
               <p class="questions_box_content">Por los momentos sólo nos entramos en todo el territorio Argentino.</p>
           </div>
-    </section>
-<section class="cuerpo">
-     <h2>Si tú pregunta no estaba en la lista, déjanos tu consulta:</h2>
-     <div >
-    <form action="https://formspree.io/f/mwkanlkl" method="POST">
-        <fieldset class="form">			
-        <legend>Ingresa tus datos</legend>
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="name" placeholder="Ingresa tu nombre y Apellido" name="nombre">
+      </div>
 
-        <label for="e-mail">Correo Electrónico:</label>
-        <input type="e-mail" placeholder="Ingresa tu correo" name="email">
-
-        <h4>Ingresa tu consulta o comentario: </h4>
-        <textarea name="comentarios" id="" cols="50" rows="10"></textarea>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-        </fieldset>
-    </form>
-    </div>
+<!--- Form --->
+    <div class="wrapper">
+      <div class="title">
+        ¡Déjanos tu consulta!
+      </div>
+      <div class="form">
+         <div class="inputfield">
+            <label>Nombre(s)</label>
+            <input type="text" class="input">
+         </div>  
+          <div class="inputfield">
+            <label>Apellido(s)</label>
+            <input type="text" class="input">
+         </div>          
+          <div class="inputfield">
+            <label>Email</label>
+            <input type="text" class="input">
+         </div> 
+        <div class="inputfield">
+            <label>Número Telefónico</label>
+            <input type="text" class="input">
+         </div> 
+        <div class="inputfield">
+            <label>Consulta</label>
+            <textarea class="textarea"></textarea>
+         </div>        
+        <div class="inputfield">
+          <input type="submit" value="Register" class="btn">
+        </div>
+      </div>
+  </div>	
 </section>
 
-<footer class="footer"> 
-  <div class="footer__box">
-    <h2 class="footer__sub-2">Soporte</h2>
-  </div>
-  <div class="footer__box">
-        <div class="footer__box__component">               
-            <h3 class="footer__sub-3">¡Nuestra Sucursal!</h3>
-              <img class="footer__img" src="imagenes/sucursal-2.jpg" width="500" height="350" alt="Sucursal1" >
-        </div>
-        <div class="footer__box__component">
-            <h3 class="footer__sub-3">Nuestra Dirección</h3>
-                <iframe class="footer__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3187903021512!2d-58.44277018491992!3d-34.596099480461504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0acea50687%3A0x3509fb30ddfbf352!2sVera%20832%2C%20C1414%20AOR%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1627426875196!5m2!1sen!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <h3 class="footer__sub-3-1">Visítanos</h3>
-        </div>
-  </div>
-  <div class="footer__redes">
-      <a href="https://www.facebook.com/" class="fa fa-facebook" target="blank"></a>
-      <a href="https://www.instagram.com" class="fa fa-instagram" target="blank"></a>
+<!--  Footer -->
+<footer class="footer">
+  <div class="footer_container">
+      <div class="footer-row">
+          <div class="footer-col">
+              <h4>Nuestros Productos</h4>
+              <ul>
+                  <li><a href="#">Todos</a></li>
+                  <li><a href="#">Más vendidos</a></li>
+                  <li><a href="#">Nuevos</a></li>
+                  <li><a href="#">Ofertas</a></li>
+                  <li><a href="#">Destacados</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>¿Necesitas ayuda?</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Garantía</a></li>
+                <li><a href="#">Métodos de Pago</a></li>
+                <li><a href="#">Envío</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Síguenos</h4>
+              <div class="social-links">                
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>          
+                                   
+              </div>
+          </div>
+      </div>
   </div>
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script> 
