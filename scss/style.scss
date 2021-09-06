@@ -15,16 +15,31 @@ body {
 /*  Responsividad CSS */
 @media only screen and (max-width: 1024px){
 .footer-col{
- width: 50% !important;
- margin-bottom: 30px !important;
+  width: 50% !important;
+  margin-bottom: 30px !important;
 }
 .pagename {
- letter-spacing: 10px !important;
+  letter-spacing: 10px !important;
 }
 .warning{
   line-height:25px !important; 
   font-size: 14px !important;
   padding: 12px !important;
+}
+.contact{
+  padding: 50px !important;
+}
+.container{
+  flex-direction: column !important;
+  margin-bottom: 40px !important;
+  width: 100% !important;
+}
+.contactInfo{
+  margin-bottom: 40px !important;
+  width: 100% !important;
+}
+.contactForm{
+  width: 100% !important;
 }
 }
 @media only screen and (max-width: 768px){
@@ -48,30 +63,44 @@ body {
 .questions_box {
   width: 100% !important;
 }
+article {
+  max-width: 750px !important;
 }
-@media (max-width:420px) {
+}
+@media (max-width:425px) {
 .wrapper .form .inputfield{
-    flex-direction: column;
-    align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   }
 .wrapper .form .inputfield label{
-    margin-bottom: 5px;
+  margin-bottom: 5px;
   }
 .wrapper .form .inputfield.terms{
-    flex-direction: row;
+  flex-direction: row;
 }
 .warning {
-    line-height: 10px !important;
-    font-size: 5px !important;
-    padding: 0px !important;
+  line-height: 10px !important;
+  font-size: 5px !important;
+  padding: 0px !important;
 }
 .pagename {
   padding: 0 !important;
   letter-spacing: 0px !important; 
   font-size: 15px !important; 
-  
+}
+.pagesubname{
+  padding: 0 !important;
+  font-size: 18px !important;
+  letter-spacing: 0px !important;
+}
+article {
+  max-width: 300px !important;
+}
+article h1{
+  font-size: 18px !important;
 }
 }
+
 
 /*Acá empieza el CSS sin responsividad*/
 .pagename {
@@ -90,39 +119,21 @@ body {
   padding: 200px;
   margin: 0; }
 
-  .pagesubname {
-    font-size: 44px;
-    font-weight: 900;
-    letter-spacing: 20px;
-    text-align: center;
-    color: white;
-    text-shadow: #dc3545 0 0 5px, #084298 0 0 5px;
-    text-transform: uppercase;
-    background-image: url(../imagenes/back.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 100px;
-    margin: 0; }
-
-h3 {
-  color: #333333;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 32px;
-  padding-bottom: 15px; }
-
-h2 {
-  color: #000000;
-  font-family: 'Bitter', serif;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 1000;
-  line-height: 54px;
-  padding: 15px 0 15px 0; }
+.pagesubname {
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: #dc3545 0 0 5px, #084298 0 0 5px;
+  text-transform: uppercase;
+  background-image: url(../imagenes/back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 100px;
+  margin: 0; }
 
 /* Preguntas */
 .questions {
@@ -136,11 +147,11 @@ h2 {
   justify-content: center;}
 
 .questions_box {
-    background-color: #fff;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    width: 80%;
-    padding: 7px 0 10px 20px; }
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 80%;
+  padding: 7px 0 10px 20px; }
 
 .questions_box_title {
   color: #000;
@@ -290,23 +301,23 @@ h2 {
     color: #666;
     font-size: 20px;
  }
- .box .info .subinfo{
+ .box .info .subInfo{
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding: 15px 10px;
    border-top: 1px solid rgba(0,0,0,.3)
  }
- .box .info .subinfo .price{
+ .box .info .subInfo .price{
    color: #ff3300;
    font-size: 20px;
  }
- .box .info .subinfo .price span{
+ .box .info .subInfo .price span{
    font-size: 15px;
    color: #999;
    text-decoration: line-through;
  }
- .box .info .subinfo .stars i{
+ .box .info .subInfo .stars i{
    color: orange;
    font-size: 17px;
  }
@@ -515,6 +526,7 @@ article p{
   margin-top: 20px;
   font-size: 18px;
   color: #000;
+  text-align: justify;
 }
 article img{
   width: 100%;
@@ -529,8 +541,7 @@ article img{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: uk;
-  background-size: cover;
+  background-color: #000;
 }
 .contact .content{
   max-width: 800px;
@@ -557,12 +568,12 @@ article img{
   display: flex;
   flex-direction: column;
 }
-.container .contactInfo .box{
+.container .contactInfo .box1{
   position: relative;
   padding: 20px 0;
   display: flex;
 }
-.container .contactInfo .box .icon{
+.container .contactInfo .box1 .icon{
   min-width: 60px;
   height: 60px;
   background: #fff;
@@ -572,7 +583,7 @@ article img{
   border-radius: 50%;
   font-size: 22px;
 }
-.container .contactInfo .box .text{
+.container .contactInfo .box1 .text{
   display: flex;
   margin-left: 20px;
   font-size: 16px;
@@ -580,17 +591,17 @@ article img{
   flex-direction: column;
   font-weight: 300;
 }
-.container .contactInfo .box .text h3{
+.container .contactInfo .box1 .text h3{
   font-weight: 500;
-  color: #00bcd4;
+  font-family: 'Poppins';
+  font-size: 17px;
 }
 .contactForm{
   width: 40%;
   padding: 40px;
   background: #fff;
 }
-
-.contactFrom h2{
+.contactForm h2{
   font-size: 30px;
   color: #333;
   font-weight: 500;
@@ -637,8 +648,4 @@ article img{
   padding: 10px;
   font-size: 18px;
 }
-@media (max-width: 991px){
-  .contact{
-    padding: 50px;
-  }
-}
+
