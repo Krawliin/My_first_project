@@ -419,7 +419,7 @@ ul {
 
 /*seccion de informacion*/
 .info-container {
-  width: 1200px;
+  width: 100%;
   margin: auto;
   margin-top: 40px; }
 
