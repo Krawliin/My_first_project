@@ -77,7 +77,9 @@ body {
   article {
     max-width: 300px !important; }
   article h1 {
-    font-size: 18px !important; } }
+    font-size: 25px !important; }
+  article p {
+    font-size: 15px !important; } }
 
 /*Acá empieza el CSS sin responsividad*/
 .pagename {
@@ -432,8 +434,9 @@ article {
 
 article h1 {
   margin-top: 20px;
-  font-weight: 500;
-  font-size: 40px; }
+  font-weight: 600;
+  font-size: 40px;
+  text-align: justify; }
 
 article p {
   margin-top: 20px;
