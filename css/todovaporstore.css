@@ -41,8 +41,11 @@ body {
   .pagename {
     padding: 0 !important;
     letter-spacing: 0px !important;
-    font-size: 25px !important;
-    height: 50px !important; }
+    font-size: 25px !important; }
+  .pagesubname {
+    padding: 0 !important;
+    font-size: 22px !important;
+    letter-spacing: 0px !important; }
   .warning {
     line-height: 25px !important;
     font-size: 8px !important;
@@ -56,12 +59,12 @@ body {
 
 @media only screen and (max-width: 425px) {
   .wrapper .form .inputfield {
-    flex-direction: column;
-    align-items: flex-start; }
+    flex-direction: column !important;
+    align-items: flex-start !important; }
   .wrapper .form .inputfield label {
-    margin-bottom: 5px; }
+    margin-bottom: 5px !important; }
   .wrapper .form .inputfield.terms {
-    flex-direction: row; }
+    flex-direction: row !important; }
   .warning {
     line-height: 10px !important;
     font-size: 5px !important;
@@ -182,6 +185,9 @@ body {
   content: '<';
   font-size: 55px;
   color: red; }
+
+.w-75 {
+  width: 100% !important; }
 
 /* Galeria de productos */
 .product-container {
